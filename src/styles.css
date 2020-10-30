@@ -1,0 +1,166 @@
+.App {
+  font-family: "Calibri";
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  min-width: 320px;
+}
+
+.header,
+.footer {
+  padding: 20px;
+  background-color: #79c7e8;
+  align-items: center;
+  color: #ffffff;
+}
+.navbar {
+  overflow: hidden;
+}
+.navbar a {
+  display: inline;
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 5px;
+  margin: 0px 10px;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+.navbar a:hover {
+  border-bottom: 1.5px solid #f2f2f2;
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  float: left;
+  margin-left: 30px;
+}
+.extra-box {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.extra {
+  color: #79c7e8;
+}
+.playarrow {
+  background-color: #79c7e8;
+  color: white;
+  height: 15px;
+  width: 15px;
+  border-radius: 5px;
+  margin-right: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu-icon {
+  display: none;
+}
+.section {
+  margin: 20px 15%;
+  /* border: 1px solid black; */
+}
+.article {
+  margin: 15px 0px;
+}
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  text-align: start;
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+}
+.news {
+  list-style-type: none;
+  display: flex;
+  flex-flow: column-reverse;
+  justify-content: flex-start;
+  padding: 0px;
+  margin-top: -20px;
+}
+.newslist {
+  display: flex;
+  padding: 0px;
+  margin: 0px;
+}
+.newsdate,
+.newscontent {
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+  text-align: start;
+  padding: 0px;
+  margin: 5px 20px 5px 0px;
+}
+img {
+  display: block;
+  width: 100%;
+  object-fit: contain;
+  height: auto;
+}
+.box-title {
+  padding: 0px;
+  border-bottom: 2px solid #79c7e8;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: flex-start;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+.footer {
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 0.8rem;
+}
+
+@media screen and (max-width: 720px) {
+  .navbar a:not(:first-child) {
+    display: none;
+  }
+  .navbar .menu-icon {
+    float: right;
+    display: block;
+  }
+  .navbar.responsive {
+    position: relative;
+  }
+  .navbar.responsive .menu-icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: right;
+    font-size: 0.8rem;
+  }
+  .navbar.responsive a:hover {
+    background-color: #45a2c6;
+    border: none;
+  }
+  .extra {
+    font-size: 0.8rem;
+  }
+  .logo {
+    margin-left: 10px;
+  }
+  .section {
+    margin: 20px 5%;
+  }
+  .footer {
+    font-size: 0.75rem;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .section {
+    margin: 10px 0px;
+  }
+  .box-title {
+    font-size: 1.2rem;
+  }
+}
