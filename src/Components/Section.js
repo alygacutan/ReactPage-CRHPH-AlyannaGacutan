@@ -10,7 +10,7 @@ class Section extends Component {
             className="decor"
             style={{
               border: "1px solid #79c7e8",
-              margin: "4px 2px 2px 0px",
+              margin: "2px 2px 2px 0px",
               padding: "0px 0.5px",
               backgroundColor: "#79c7e8"
             }}
